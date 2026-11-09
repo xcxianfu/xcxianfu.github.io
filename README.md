@@ -1,6 +1,6 @@
 # Xianfu Chen — Research website
 
-A responsive personal research website, ready for GitHub Pages. No build step or external dependencies. Includes a biography, research updates, eight selected publications, funded projects, education, academic service, and selected recognition.
+A responsive personal research website, ready for GitHub Pages. No build step or external dependencies. Includes a biography, research updates, a searchable publication archive, funded projects, education, academic service, and selected recognition.
 
 ## Add your research
 
@@ -41,6 +41,9 @@ Serve this directory with any static HTTP server. You can also open `index.html`
 - Update categories and text search
 - Full update reading dialog
 - Publication and project sections
-- Publication year filters
+- Publication year filters and pagination (six records per page)
+- Navy and blue visual theme with 18px base text, 20–22px paper titles, and responsive layouts
+- Four recent updates on the home page, with a control to reveal the complete update list
 - Keyboard navigation, visible focus states, reduced-motion support
 - All content in one editable file
+
