@@ -10,7 +10,7 @@ window.RESEARCH_SITE = {
     "6G & edge intelligence"
   ],
   "aboutHeading": "Xianfu Chen, Ph.D.",
-  "bio": "I am Chief Research Engineer at Shenzhen CyberAray Network Technology Co., Ltd., and a Professor at the Shanghai Advanced Research Institute, Chinese Academy of Sciences. My work connects machine learning with wireless communications, edge computing, and network resource management.\n\nBefore joining CyberAray in 2023, I spent more than a decade at VTT Technical Research Centre of Finland. I received my Ph.D. in Information and Communication Engineering from Zhejiang University in 2012.",
+  "bio": "I am Chief Research Engineer at Shenzhen CyberAray Network Technology Co., Ltd., and an Adjunct Professor at the Shanghai Advanced Research Institute, Chinese Academy of Sciences. My work connects machine learning with wireless communications, edge computing, and network resource management.\n\nBefore joining CyberAray in 2023, I spent more than a decade at VTT Technical Research Centre of Finland. I received my Ph.D. in Information and Communication Engineering from Zhejiang University in 2012.",
   "links": [
     {
       "label": "Google Scholar",
@@ -2845,32 +2845,6 @@ window.RESEARCH_SITE = {
       ]
     },
     {
-      "title": "List of Reviewer by Tracks",
-      "authors": "R Bless, Y Duan, V Farhadi, I Filippini, P Giaccone, Z Guo, S Hasan, ...",
-      "venue": "",
-      "year": null,
-      "description": "",
-      "links": [
-        {
-          "label": "Google Scholar",
-          "url": "https://scholar.google.fi/citations?view_op=view_citation&hl=en&user=peH-CyUAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=peH-CyUAAAAJ:xGWFX6Gbr9MC"
-        }
-      ]
-    },
-    {
-      "title": "Track1: Infrastructure and Networking Technologies",
-      "authors": "R Bless, Y Duan, V Farhadi, I Filippini, P Giaccone, Z Guo, S Hasan, ...",
-      "venue": "",
-      "year": null,
-      "description": "",
-      "links": [
-        {
-          "label": "Google Scholar",
-          "url": "https://scholar.google.fi/citations?view_op=view_citation&hl=en&user=peH-CyUAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=peH-CyUAAAAJ:YPNY0knpFBYC"
-        }
-      ]
-    },
-    {
       "title": "Brain-Computer-Interface Inspired Communications",
       "authors": "H Hu, X Chen, T Jiang",
       "venue": "",
@@ -2915,5 +2889,33 @@ window.RESEARCH_SITE = {
     "IEEE ComSoc Outstanding Paper Award · 2021",
     "IEEE TCCN Exemplary Editor Award · 2024",
     "EAI WiSATS Best Paper Award · 2024"
+  ],
+  "excludedScholarRecords": [
+    {
+      "title": "List of Reviewer by Tracks",
+      "authors": "R Bless, Y Duan, V Farhadi, I Filippini, P Giaccone, Z Guo, S Hasan, ...",
+      "venue": "",
+      "year": null,
+      "description": "",
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.fi/citations?view_op=view_citation&hl=en&user=peH-CyUAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=peH-CyUAAAAJ:xGWFX6Gbr9MC"
+        }
+      ]
+    },
+    {
+      "title": "Track1: Infrastructure and Networking Technologies",
+      "authors": "R Bless, Y Duan, V Farhadi, I Filippini, P Giaccone, Z Guo, S Hasan, ...",
+      "venue": "",
+      "year": null,
+      "description": "",
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.fi/citations?view_op=view_citation&hl=en&user=peH-CyUAAAAJ&cstart=200&pagesize=100&sortby=pubdate&citation_for_view=peH-CyUAAAAJ:YPNY0knpFBYC"
+        }
+      ]
+    }
   ]
 };

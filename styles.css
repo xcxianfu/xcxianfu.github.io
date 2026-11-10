@@ -252,3 +252,10 @@ body:has(dialog[open]) { overflow: hidden; }
   .publication, .project { break-inside: avoid; }
 }
 
+
+/* Keep navigation readable and prevent overflow on the narrowest phones. */
+@media (max-width: 360px) {
+  html { scroll-padding-top: 184px; }
+  .header nav { flex-wrap: wrap; justify-content: flex-start; gap: 4px 12px; }
+  .header nav a { flex: 0 0 calc(50% - 6px); }
+}
