@@ -130,8 +130,8 @@ window.RESEARCH_SITE = {
       "date": "2024-06",
       "type": "Project",
       "title": "CoGNETs: swarm intelligence as information processing",
-      "summary": "A Horizon Europe collaboration exploring continuums of game networks, running through May 2027.",
-      "body": "I am a co-principal investigator on “CoGNETs — Continuums Of Game NETs: swarm intelligence as information processing,” funded by Horizon Europe.\n\nProject period: June 2024–May 2027."
+      "summary": "Proposal Lead for VTT: led VTT’s contribution to the successful EU-funded CoGNETs proposal.",
+      "body": "CoGNETs — Continuums Of Game NETs: swarm intelligence as information processing.\n\nRole: Proposal Lead for VTT.\n\nLed the development of VTT’s contribution to the successful Horizon Europe CoGNETs proposal, securing EU funding for VTT’s participation. Following my departure from VTT, responsibility for project implementation was transferred to another VTT colleague.\n\nProject period: June 2024–May 2027."
     }
   ],
   "publications": [
@@ -3713,7 +3713,7 @@ window.RESEARCH_SITE = {
     {
       "title": "CoGNETs",
       "status": "2024–2027",
-      "description": "Continuums Of Game NETs: swarm intelligence as information processing. A Horizon Europe project in which I serve as co-principal investigator.",
+      "description": "Continuums Of Game NETs: swarm intelligence as information processing. Role: Proposal Lead for VTT. Led the development of VTT’s contribution to the successful Horizon Europe CoGNETs proposal, securing EU funding for VTT’s participation. Following my departure from VTT, responsibility for project implementation was transferred to another VTT colleague.",
       "links": []
     },
     {
