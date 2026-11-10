@@ -120,10 +120,13 @@
   let publicationPage = 1;
   function renderPublications() {
     const year = $('publication-year').value;
+    const type = $('publication-type').value;
+    const corresponding = $('corresponding-only').checked;
     const query = $('publication-search').value.trim().toLowerCase();
     const publications = sortedPublications.filter(pub =>
+      (type === 'All' || pub.type === type) && (!corresponding || pub.corresponding) &&
       (year === 'All' || (year === 'Undated' ? !pub.year : String(pub.year) === year)) &&
-      [pub.title, pub.authors, pub.venue].join(' ').toLowerCase().includes(query));
+      [pub.title, pub.authors, pub.venue, pub.id, pub.note].join(' ').toLowerCase().includes(query));
     const pageCount = Math.max(1, Math.ceil(publications.length / pageSize));
     publicationPage = Math.min(publicationPage, pageCount);
     const start = (publicationPage - 1) * pageSize;
@@ -133,9 +136,16 @@
       const copy = element('div');
       copy.append(element('h3', '', pub.title), element('p', '', pub.authors),
         element('p', 'venue', pub.venue || 'Year and venue not listed on Google Scholar'));
+      const badges = element('div', 'publication-badges');
+      if (pub.corresponding) badges.append(element('span', 'tag', 'Corresponding author'));
+      if (pub.featured) badges.append(element('span', 'tag', 'Selected work'));
+      if (pub.reference.includes('Best Paper Award') || pub.reference.includes('Outstanding Paper Award')) badges.append(element('span', 'tag', 'Award-winning paper'));
+      if (pub.venue.includes('to be published')) badges.append(element('span', 'tag', 'Forthcoming'));
+      copy.append(badges);
+      if (pub.note) copy.append(element('p', 'author-note', pub.note));
       if (pub.description) copy.append(element('p', '', pub.description));
       copy.append(links(pub.links));
-      row.append(element('span', 'pub-index', String(start + i + 1).padStart(2, '0')), copy);
+      row.append(element('span', 'pub-index', pub.id), copy);
       return row;
     }));
     $('publication-count').textContent = publications.length ?
@@ -149,6 +159,8 @@
   }
   const resetPublications = () => { publicationPage = 1; renderPublications(); };
   $('publication-year').addEventListener('change', resetPublications);
+  $('publication-type').addEventListener('change', resetPublications);
+  $('corresponding-only').addEventListener('change', resetPublications);
   $('publication-search').addEventListener('input', resetPublications);
   for (const [id, direction] of [['previous-page', -1], ['next-page', 1]]) {
     $(id).addEventListener('click', () => {
@@ -174,7 +186,21 @@
     return entry;
   }));
   $('service-list').replaceChildren(...(data.service || []).map(item => element('li', '', item)));
-  $('recognition-list').replaceChildren(...(data.recognition || []).map(item => element('li', '', item)));
+  $('patents-list').replaceChildren(...data.patents.map(patent => {
+    const card = element('article', 'patent-card');
+    card.append(element('span', 'tag', patent.status), element('h3', '', patent.title),
+      element('p', 'patent-number', patent.number),
+      element('p', '', patent.inventors + ' · X. Chen: ' + patent.position + ' inventor'),
+      element('p', 'venue', (patent.status === 'Granted patent' ? 'Granted: ' : 'Published: ') + patent.date));
+    return card;
+  }));
+  $('award-groups').replaceChildren(...data.awardGroups.map(group => {
+    const section = element('section', 'award-group');
+    const list = element('ul');
+    list.append(...group.items.map(item => element('li', '', item)));
+    section.append(element('h3', '', group.title), list);
+    return section;
+  }));
   const markNavigation = () => document.querySelectorAll('.header nav a').forEach(a => {
     if (a.hash === location.hash) a.setAttribute('aria-current', 'location');
     else a.removeAttribute('aria-current');

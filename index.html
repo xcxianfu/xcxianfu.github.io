@@ -7,9 +7,9 @@
   <meta name="theme-color" content="#123a63">
   <title>Xianfu Chen — Wireless Communications &amp; AI</title>
   <link rel="icon" href="favicon.svg?v=blue-20261109" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=blue-20261110">
-  <script src="content.js?v=records-20261110-adjunct" defer></script>
-  <script src="app.js?v=blue-20261109" defer></script>
+  <link rel="stylesheet" href="styles.css?v=cv-20261110">
+  <script src="content.js?v=cv-20261110" defer></script>
+  <script src="app.js?v=cv-20261110" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -17,7 +17,7 @@
   <header class="site-header">
     <div class="header shell">
       <a class="brand" href="#main" aria-label="Xianfu Chen home"><span class="brand-mark" aria-hidden="true">XC<span></span></span><span id="brand-name">Xianfu Chen</span></a>
-      <nav aria-label="Main navigation"><a href="#about">About</a><a href="#updates">Updates</a><a href="#publications">Publications</a><a href="#projects">Projects</a></nav>
+      <nav aria-label="Main navigation"><a href="#about">About</a><a href="#updates">Updates</a><a href="#publications">Publications</a><a href="#patents">Patents</a><a href="#awards">Awards</a></nav>
       <a class="header-contact" href="mailto:xianfu.chen@ieee.org">Get in touch <span aria-hidden="true">↗</span></a>
     </div>
   </header>
@@ -62,17 +62,19 @@
     <section class="section publications-section" id="publications" aria-labelledby="publications-heading">
       <div class="shell">
         <div class="section-heading"><div><div class="eyebrow">02 / PUBLICATION ARCHIVE</div><h2 id="publications-heading">Publications</h2></div><a class="text-link" href="https://scholar.google.fi/citations?user=peH-CyUAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">View Google Scholar <span aria-hidden="true">↗</span></a></div>
-        <p class="publication-source"><span id="archive-size">206</span> records from Google Scholar <span aria-hidden="true">·</span> Archive updated October 7, 2026</p>
-        <div class="feed-controls publication-controls"><label class="publication-year-label" for="publication-year">Filter by year <select id="publication-year"><option value="All">All years</option></select></label><label class="search"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input id="publication-search" type="search" placeholder="Search title, author, or venue" aria-label="Search publications"></label></div>
-        <div class="publication-list-top"><p class="results-count" id="publication-count" role="status"></p><span class="sort-label">Newest first</span></div>
+        <p class="publication-source"><span id="archive-size">201</span> entries · CV updated November 10, 2026</p><p class="archive-breakdown">100 journal &amp; magazine articles · 96 conference papers (including 2 forthcoming) · 4 book chapters · 1 doctoral dissertation</p>
+        <div class="feed-controls publication-controls"><label class="publication-year-label" for="publication-type">Publication type <select id="publication-type"><option value="All">All types</option><option value="journal">Journal &amp; magazine (100)</option><option value="conference">Conference (96)</option><option value="chapter">Book chapter (4)</option><option value="dissertation">Dissertation (1)</option></select></label><label class="publication-year-label" for="publication-year">Filter by year <select id="publication-year"><option value="All">All years</option></select></label><label class="search"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input id="publication-search" type="search" placeholder="Search title, author, or venue" aria-label="Search publications"></label></div>
+        <label class="corresponding-filter"><input type="checkbox" id="corresponding-only"> Corresponding-author papers only</label><div class="publication-list-top"><p class="results-count" id="publication-count" role="status"></p><span class="sort-label">Newest first</span></div>
         <div id="publications-list" aria-live="polite"></div>
         <nav class="pagination" aria-label="Publication pages"><button id="previous-page" class="outline-button" disabled><span aria-hidden="true">←</span> Previous</button><span id="page-status" role="status">Page 1</span><button id="next-page" class="outline-button">Next <span aria-hidden="true">→</span></button></nav>
       </div>
     </section>
-    <section class="section shell" id="projects" aria-labelledby="projects-heading"><div class="section-heading"><div><div class="eyebrow">03 / RESEARCH COLLABORATIONS</div><h2 id="projects-heading">Projects</h2></div><p>Funded research and collaborations.</p></div><div class="project-grid" id="projects-list"></div></section>
+    <section class="section shell" id="patents" aria-labelledby="patents-heading"><div class="section-heading"><div><div class="eyebrow">03 / INVENTIONS</div><h2 id="patents-heading">Patents</h2></div><p>4 granted patents · 4 published applications</p></div><p class="publication-source">Status and inventor positions as listed in the CV dated November 10, 2026.</p><div class="patent-grid" id="patents-list"></div></section>
+    <section class="section awards-section" id="awards" aria-labelledby="awards-heading"><div class="shell"><div class="section-heading"><div><div class="eyebrow">04 / AWARDS &amp; HONOURS</div><h2 id="awards-heading">Awards &amp; recognition</h2></div></div><div id="award-groups" class="award-grid"></div></div></section>
+    <section class="section shell" id="projects" aria-labelledby="projects-heading"><div class="section-heading"><div><div class="eyebrow">05 / RESEARCH COLLABORATIONS</div><h2 id="projects-heading">Projects</h2></div><p>Funded research and collaborations.</p></div><div class="project-grid" id="projects-list"></div></section>
     <section class="about-band" id="about" aria-labelledby="about-heading">
-      <div class="about-section shell"><div><div class="eyebrow">04 / ACADEMIC PROFILE</div><h2 id="about-heading">Xianfu Chen, Ph.D.</h2><div class="about-rule" aria-hidden="true"></div><p class="about-note">Wireless communications.<br>Learning and intelligence.</p></div><div><p id="bio"></p><div class="profile-links" id="profile-links"></div></div></div>
-      <div class="profile-details shell" aria-label="Academic background"><section><h3>Education</h3><div id="education-list"></div></section><section><h3>Academic service</h3><ul id="service-list"></ul></section><section><h3>Selected recognition</h3><ul id="recognition-list"></ul></section></div>
+      <div class="about-section shell"><div><div class="eyebrow">06 / ACADEMIC PROFILE</div><h2 id="about-heading">Xianfu Chen, Ph.D.</h2><div class="about-rule" aria-hidden="true"></div><p class="about-note">Wireless communications.<br>Learning and intelligence.</p></div><div><p id="bio"></p><div class="profile-links" id="profile-links"></div></div></div>
+      <div class="profile-details shell" aria-label="Academic background"><section><h3>Education</h3><div id="education-list"></div></section><section><h3>Academic service</h3><ul id="service-list"></ul></section></div>
     </section>
     <noscript><p class="shell no-script">Enable JavaScript to browse the research archive, or visit <a href="https://scholar.google.fi/citations?user=peH-CyUAAAAJ&amp;hl=en">Xianfu Chen on Google Scholar</a>.</p></noscript>
   </main>
